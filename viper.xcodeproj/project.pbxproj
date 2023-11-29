@@ -17,6 +17,7 @@
 		5D9D7E7AB5B2127C97F8EF79 /* noneFirstScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B4DC744B1A78643C78F712C /* noneFirstScreenViewController.xib */; };
 		6A7EC51CCB156C652977899D /* noneFirstScreenRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4177CC006609E7D5D2CEB6 /* noneFirstScreenRouterInput.swift */; };
 		73AF5ADF2F4DD6BE7412E2BA /* noneSecondScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65AA70131F5FB1756E845BC8 /* noneSecondScreenViewController.xib */; };
+		7499038E2B1773D0005C3A49 /* module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7499038D2B1773D0005C3A49 /* module.swift */; };
 		74BC83262B16284F00B53E34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BC83252B16284F00B53E34 /* AppDelegate.swift */; };
 		74BC83282B16284F00B53E34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BC83272B16284F00B53E34 /* SceneDelegate.swift */; };
 		74BC832A2B16284F00B53E34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BC83292B16284F00B53E34 /* ViewController.swift */; };
@@ -49,6 +50,7 @@
 		65AA70131F5FB1756E845BC8 /* noneSecondScreenViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = noneSecondScreenViewController.xib; sourceTree = "<group>"; };
 		6B4DC744B1A78643C78F712C /* noneFirstScreenViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = noneFirstScreenViewController.xib; sourceTree = "<group>"; };
 		7045841538F796E264B0C8A5 /* noneFirstScreenModuleInOut.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = noneFirstScreenModuleInOut.swift; sourceTree = "<group>"; };
+		7499038D2B1773D0005C3A49 /* module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = module.swift; sourceTree = "<group>"; };
 		74BC83222B16284F00B53E34 /* viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = viper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74BC83252B16284F00B53E34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74BC83272B16284F00B53E34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7499038C2B1773B5005C3A49 /* BaseRouter */ = {
+			isa = PBXGroup;
+			children = (
+				74BC83642B1739CA00B53E34 /* BaseSwiftRouter.swift */,
+				74BC83662B1739D800B53E34 /* BaseSwiftRouterInput.swift */,
+			);
+			path = BaseRouter;
+			sourceTree = "<group>";
+		};
 		74BC83192B16284F00B53E34 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +111,7 @@
 		74BC83242B16284F00B53E34 /* viper */ = {
 			isa = PBXGroup;
 			children = (
+				7499038C2B1773B5005C3A49 /* BaseRouter */,
 				74BC83252B16284F00B53E34 /* AppDelegate.swift */,
 				74BC83272B16284F00B53E34 /* SceneDelegate.swift */,
 				74BC83292B16284F00B53E34 /* ViewController.swift */,
@@ -109,6 +121,7 @@
 				74BC832E2B16284F00B53E34 /* viper.xcdatamodeld */,
 				85F3E71853C704816B7677A0 /* FirstScreen */,
 				B7F0E53A700B089E8B31F2CA /* SecondScreen */,
+				7499038D2B1773D0005C3A49 /* module.swift */,
 			);
 			path = viper;
 			sourceTree = "<group>";
@@ -131,7 +144,6 @@
 				2B81315A247D683FE1C38453 /* noneSecondScreenInteractorInOut.swift */,
 				D7E14398BF160F2BBBA09476 /* noneSecondScreenInteractor.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
 			sourceTree = "<group>";
 		};
@@ -141,7 +153,6 @@
 				DA475CF6D6A7CDA288F0621F /* noneSecondScreenRouterInput.swift */,
 				B9BDA604FB6B14343617222D /* noneSecondScreenRouter.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -154,7 +165,6 @@
 				A1881C0BDDC4B1E7CA6AA33F /* Router */,
 				D42C4E3EDC961FD8CAA642D3 /* View */,
 			);
-			name = SecondScreen;
 			path = SecondScreen;
 			sourceTree = "<group>";
 		};
@@ -164,7 +174,6 @@
 				52941C7466989A8417C4CF3B /* noneSecondScreenModuleInOut.swift */,
 				E2CA005AE75C2D26492502DB /* noneSecondScreenPresenter.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -192,7 +201,6 @@
 				14E5162C7F69AC6BBD149A41 /* noneSecondScreenViewController.swift */,
 				65AA70131F5FB1756E845BC8 /* noneSecondScreenViewController.xib */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -201,7 +209,6 @@
 			children = (
 				9BBBBA3C55EE00E5F63A0272 /* noneSecondScreenAssembly.swift */,
 			);
-			name = Assembly;
 			path = Assembly;
 			sourceTree = "<group>";
 		};
@@ -220,8 +227,6 @@
 			children = (
 				CD4177CC006609E7D5D2CEB6 /* noneFirstScreenRouterInput.swift */,
 				48F9FC18077290FFD2B20D7A /* noneFirstScreenRouter.swift */,
-				74BC83642B1739CA00B53E34 /* BaseSwiftRouter.swift */,
-				74BC83662B1739D800B53E34 /* BaseSwiftRouterInput.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -316,6 +321,7 @@
 				74BC83672B1739D800B53E34 /* BaseSwiftRouterInput.swift in Sources */,
 				482F09CC4B1AD593809786F6 /* noneFirstScreenInteractorInOut.swift in Sources */,
 				DBD5891D6D4F43DB52B3F80C /* noneFirstScreenInteractor.swift in Sources */,
+				7499038E2B1773D0005C3A49 /* module.swift in Sources */,
 				92C81297E579D0F4E9045FD6 /* noneFirstScreenModuleInOut.swift in Sources */,
 				D4C3805250977073C4E1EC0A /* noneFirstScreenPresenter.swift in Sources */,
 				6A7EC51CCB156C652977899D /* noneFirstScreenRouterInput.swift in Sources */,

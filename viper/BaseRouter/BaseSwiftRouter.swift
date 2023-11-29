@@ -13,9 +13,3 @@ class BaseSwiftRouter: BaseSwiftRouterInput {
         print(#function)
     }
 }
-
-class MyModuleOutput: noneFirstScreenModuleOutput, noneSecondScreenModuleOutput {
-    func detail() {
-        print("detail method was called")
-    }
-}
