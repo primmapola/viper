@@ -1,0 +1,24 @@
+### Headers settings
+company: none
+
+### Xcode project settings
+project_name: viper
+xcodeproj_path: viper.xcodeproj
+prefix: 
+
+### Code generation settings section
+# The main project target name
+project_target: viper
+
+# The file path for new modules
+project_file_path: /viper
+
+# The Xcode group path to new modules
+project_group_path: /viper
+
+### Templates
+catalogs:
+- 'https://git.amocrm.ru/ios/viper-templates'
+templates:
+- {name: amo_viper_objc}
+- {name: amo_viper_swift}
